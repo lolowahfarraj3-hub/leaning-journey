@@ -4,14 +4,15 @@
 //
 //  Created by lulwah on 24/04/1447 AH.
 //
-
 import SwiftUI
 
 @main
-struct leaning_journeyApp: App {
+struct LeaningJourneyApp: App {   // name can be anything, just one @main
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                OnboardingView()   // Page 1
+            }
         }
     }
 }

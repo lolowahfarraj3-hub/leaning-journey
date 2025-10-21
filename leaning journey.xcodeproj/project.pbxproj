@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A0C54AF12EA61FA4002D869D /* Untitled.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C54AF02EA61FA2002D869D /* Untitled.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A0AE82412EA0D4AF00AFD8BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		A0AE82332EA0D4AE00AFD8BB /* leaning journey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "leaning journey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AE82402EA0D4AF00AFD8BB /* leaning journeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "leaning journeyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AE824A2EA0D4AF00AFD8BB /* leaning journeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "leaning journeyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C54AF02EA61FA2002D869D /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +84,7 @@
 				A0AE82432EA0D4AF00AFD8BB /* leaning journeyTests */,
 				A0AE824D2EA0D4AF00AFD8BB /* leaning journeyUITests */,
 				A0AE82342EA0D4AE00AFD8BB /* Products */,
+				A0C54AF02EA61FA2002D869D /* Untitled.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C54AF12EA61FA4002D869D /* Untitled.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
