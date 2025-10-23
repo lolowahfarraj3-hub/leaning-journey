@@ -32,9 +32,7 @@ struct OnboardingView: View {
                         Circle()
                             .fill(Color.white.opacity(0.06))
                             .frame(width: 96, height: 96)
-                            .overlay(
-                                Circle().stroke(accent.opacity(0.7), lineWidth: 2)
-                            )
+                            .overlay(Circle().stroke(accent.opacity(0.7), lineWidth: 2))
                             .shadow(color: accent.opacity(0.35), radius: 24, x: 0, y: 8)
                         Image(systemName: "flame.fill")
                             .font(.system(size: 36, weight: .bold))
@@ -66,9 +64,7 @@ struct OnboardingView: View {
                         .foregroundStyle(textSecondary)
                         .padding(.vertical, 8)
 
-                    Rectangle()
-                        .fill(divider)
-                        .frame(height: 1)
+                    Rectangle().fill(divider).frame(height: 1)
                 }
 
                 // Period buttons
@@ -86,10 +82,7 @@ struct OnboardingView: View {
                                     .font(.subheadline).fontWeight(.semibold)
                                     .padding(.horizontal, 18)
                                     .padding(.vertical, 10)
-                                    .background(
-                                        Capsule()
-                                            .fill(p == selectedPeriod ? accent : controlBG)
-                                    )
+                                    .background(Capsule().fill(p == selectedPeriod ? accent : controlBG))
                                     .foregroundStyle(p == selectedPeriod ? Color.white : textPrimary.opacity(0.85))
                                     .overlay(
                                         Capsule()
@@ -103,12 +96,11 @@ struct OnboardingView: View {
 
                 Spacer()
 
-        
-                // CTA
+                // CTA (now just a dummy button, no navigation)
                 HStack {
                     Spacer()
-                    NavigationLink {
-                        page2(subject: subject, period: selectedPeriod)   // ✅ correct init
+                    Button {
+                        print("Start learning tapped") // ✅ no navigation
                     } label: {
                         Text("Start learning")
                             .font(.headline)
@@ -120,18 +112,15 @@ struct OnboardingView: View {
                     .shadow(color: accent.opacity(0.45), radius: 18, x: 0, y: 10)
                     Spacer()
                 }
-
-                }
                 .padding(.bottom, 8)
             }
             .padding(.horizontal, 20)
             .padding(.top, 8)
         }
     }
+}
 
 #Preview {
-    NavigationStack {   // ✅ Needed for NavigationLink in preview
-        OnboardingView()
-            .preferredColorScheme(.dark)
-    }
+    OnboardingView()
+        .preferredColorScheme(.dark)
 }

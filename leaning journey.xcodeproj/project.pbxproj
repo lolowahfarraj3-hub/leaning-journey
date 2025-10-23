@@ -201,6 +201,9 @@
 			);
 			mainGroup = A0AE822A2EA0D4AE00AFD8BB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A05D083D2EAA099A00CEE236 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A0AE82342EA0D4AE00AFD8BB /* Products */;
 			projectDirPath = "";
@@ -557,6 +560,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A05D083D2EAA099A00CEE236 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = A0AE822B2EA0D4AE00AFD8BB /* Project object */;
 }
